@@ -54,3 +54,36 @@ int main()
     printf("%d\n", array[6]);
     printf("%d\n", array[7]);
 }  
+/**
+ * C program to calculate gain or loss
+ */
+int main()
+{
+    int ms, me, amt; 
+    
+    /* Input money spent and money earned */
+    printf("Enter money spent today: ");
+    scanf("%d", &cp);
+    printf("Enter money earned today: ");
+    scanf("%d", &sp);
+    
+    if(me > ms)
+    {
+        /* Calculate Gain */
+        amt = me - ms;
+        printf("Profit = %d", amt);
+    }
+    
+    return 0;
+}
+    else if(ms > me)
+    {
+        /* Calculate Loss */
+        amt = ms - me;
+        printf("Loss = %d", amt);
+    }
+    else
+    {
+        /* Neither gain nor loss */
+        printf(0);
+    }
