@@ -26,9 +26,9 @@ int main()
     
     /* Input money spent and money earned */
     printf("Enter money spent today: ");
-    scanf("%d", &cp);
+    scanf("%d", &ms);
     printf("Enter money earned today: ");
-    scanf("%d", &sp);
+    scanf("%d", &me);
     
     if(me > ms)
     {
