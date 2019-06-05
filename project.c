@@ -33,6 +33,14 @@ main ()
 	  /* Calculate Gain */
 	  amt = me - ms;
 	  printf ("Profit day %d = %d\n", h, amt);
+	      for (i = 0; i < n; ++i)
+   {
+      scanf("%d", &data[ i ]);
+      sum += data[ i ];
+   }
+
+   mean = sum / (float)n;
+   printf("Mean: %.4f", mean);
 	}
 
       else if (ms > me)
@@ -47,6 +55,32 @@ main ()
 	  printf ("No profit or loss day %d", h);
 	}
     }
+/*
+    C program to calculate AVERAGE gain/loss
+*\
+  int main()
+  {
+   int i, n, sum = 0;
+   float mean;
+
+   printf("Enter the number of data items: ");
+   scanf("%d", &n);
+
+   //taking data items from user
+   printf("Enter data:\n");
+   for (i = 0; i < n; ++i)
+   {
+      scanf("%d", &data[ i ]);
+      sum += data[ i ];
+   }
+
+   mean = sum / (float)n;
+   printf("Mean: %.4f", mean);
+
+   return 0;
+}
+
+	
 /*
     C program to calculate NET gain/loss
 */
