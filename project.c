@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int
-main ()
+main (int argc, char* argv[])
 {
   /* C program to initialize arrayGain and arrayLoss */
   int arrayGain[30];
