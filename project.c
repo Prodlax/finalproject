@@ -47,4 +47,18 @@ main ()
 	  printf ("No profit or loss day %d", h);
 	}
     }
+/*
+    C program to calculate NET gain/loss
+*/
+    int gain(int arrayGain[], int n) 
+{ 
+    int gain = 0; // initialize sum 
+  
+    // Iterate through all elements  
+    // and add them to sum 
+    for (int i = 0; i < n; i++) 
+    sum += arr[i]; 
+  
+    return sum; 
+} 
 }
