@@ -57,7 +57,7 @@ main ()
     }
 /*
     C program to calculate AVERAGE gain/loss
-*\
+*/
   int main()
   {
    int i, n, sum = 0;
@@ -80,19 +80,29 @@ main ()
    return 0;
 }
 
-	
-/*
-    C program to calculate NET gain/loss
-*/
-    int gain(int arrayGain[], int n) 
-{ 
-    int gain = 0; // initialize sum 
+	/* C program to calculate highest money spent in one day and highest money earned in one day*/
+  int highestGain = arrayGain[0];
+  int dayGain;
+  int highestSpent = arraySpent[0];
+  int dayLoss;
   
-    // Iterate through all elements  
-    // and add them to sum 
-    for (int i = 0; i < n; i++) 
-    sum += arr[i]; 
+  for (int n = 1; n < 30; n++)
+  {
+   if (arrayGain[n] > highestGain)
+  {
+      highestGain = arrayGain[n];
+      dayGain = n+1;
+  }
+  }
+  printf("The highest amount of money gained in one day is %d, on day %d\n", highestGain, dayGain);
   
-    return sum; 
-} 
+  for (int x = 1; x < 30; x++)
+  {
+      if (arraySpent[x] > highestSpent)
+      {
+          highestSpent = arraySpent[x];
+          dayLoss = x+1;
+      }
+  }
+  printf ("The highest amount of money spent in one day is %d, on day %d\n", highestSpent, dayLoss);
 }
