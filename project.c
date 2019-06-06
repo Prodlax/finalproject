@@ -60,25 +60,38 @@ main (int argc, char* argv[])
 */
   int main()
   {
-   int i, n, sum = 0;
-   float mean;
-
-   printf("Enter the number of data items: ");
+   int n, sum = 0, me, arrayGain[30];
+ 
    scanf("%d", &n);
-
-   //taking data items from user
-   printf("Enter data:\n");
-   for (i = 0; i < n; ++i)
+ 
+   for (me = 0; me < n; me++)
    {
-      scanf("%d", &data[ i ]);
-      sum += data[ i ];
+      scanf("%d", &array[me]);
+      sum = sum + array[me];
    }
 
    mean = sum / (float)n;
-   printf("Mean: %.4f", mean);
+   printf("Average Money Gained: %.4f", mean);
 
    return 0;
-}
+  }
+ int main()
+  {
+   int n, sum = 0, ms, arraySpent[30];
+ 
+   scanf("%d", &n);
+ 
+   for (ms = 0; ms < n; ms++)
+   {
+      scanf("%d", &array[ms]);
+      sum = sum + array[ms];
+   }
+
+   mean = sum / (float)n;
+   printf("Average Money Spent: %.4f", mean);
+
+   return 0;
+  }
 
 	/* C program to calculate highest money spent in one day and highest money earned in one day*/
   int highestGain = arrayGain[0];
