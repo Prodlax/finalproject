@@ -3,15 +3,25 @@
 int
 main (int argc, char* argv[])
 {
+  int i;
+  for(i = 0; i < argc; i++) {
+	   printf(argv[i]);
+  }
+  return 0;
+	
+}
+ {exit(0);
+  
+  
   /* C program to initialize arrayGain and arrayLoss */
   int arrayGain[30];
-  for (int i = 0; i < 30; i++)
+  for (int i = 1; i < 61; i+=2)
     {
       printf ("Input money earned on day %d: \n", i);
       scanf ("%d", &arrayGain[i]);
     }
   int arraySpent[30];
-  for (int i = 0; i < 30; i++)
+  for (int i = 2; i < 61; i+=2)
     {
       printf ("Input money spent on day %d: \n", i);
       scanf ("%d", &arraySpent[i]);
