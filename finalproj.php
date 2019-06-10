@@ -85,12 +85,12 @@
     ?>
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-      Arg1: <input type="text" name="arg1"><br>
-      Arg2: <input type="text" name="arg2"><br>
-      Arg3: <input type="text" name="arg3"><br>
-      Arg4: <input type="text" name="arg4"><br>
-      Arg5: <input type="text" name="arg5"><br>
-      Arg6: <input type="text" name="arg6"><br>
+      Money earned on day 1: <input type="text" name="arg1"><br>
+      Money spent on day 1: <input type="text" name="arg2"><br>
+      Money earned on day 2: <input type="text" name="arg3"><br>
+      Money spent on day 2: <input type="text" name="arg4"><br>
+      Money earned on day 3: <input type="text" name="arg5"><br>
+      Money spent on day 3: <input type="text" name="arg6"><br>
       Arg7: <input type="text" name="arg7"><br>
       Arg8: <input type="text" name="arg8"><br>
       Arg9: <input type="text" name="arg9"><br>
