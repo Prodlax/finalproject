@@ -3,59 +3,34 @@
 int
 main (int argc, char* argv[])
 {
-  int i;
-  for(i = 0; i < argc; i++) {
-	   printf("%d", argv[i]);
-  }
-  if (argv[i % 2 == 0])
-  {
-	argv[i] = arrayGain[i];  
-  }
-  else
-  {
-	argv[i] = arraySpent[i];	  
-  }
-  
   /* C program to initialize arrayGain and arrayLoss */
   int arrayGain[30];
-  for (int i = 1; i < 30; i++)
+  for (int i = 0; i < 30; i++)
     {
       printf ("Input money earned on day %d: \n", i);
       scanf ("%d", &arrayGain[i]);
     }
   int arraySpent[30];
-  for (int i = 2; i < 30; i++)
+  for (int i = 0; i < 30; i++)
     {
       printf ("Input money spent on day %d: \n", i);
       scanf ("%d", &arraySpent[i]);
     }
-
 /**
  * C program to calculate gain or loss
  */
   int ms, me, amt;
-
   /* money spent and money earned, daily */
   for (int h = 0; h < 30; h++)
     {
       ms = arraySpent[h];
       me = arrayGain[h];
-
       if (me > ms)
 	{
 	  /* Calculate Gain */
 	  amt = me - ms;
 	  printf ("Profit day %d = %d\n", h, amt);
-	      for (i = 0; i < n; ++i)
-   {
-      scanf("%d", &data[ i ]);
-      sum += data[ i ];
-   }
-
-   mean = sum / (float)n;
-   printf("Mean: %.4f", mean);
 	}
-
       else if (ms > me)
 	{
 	  /* Calculate Loss */
@@ -65,46 +40,49 @@ main (int argc, char* argv[])
       else
 	{
 	  /* Neither gain nor loss */
-	  printf ("No profit or loss day %d", h);
+	  printf ("No profit or loss day %d\n", h);
 	}
     }
 /*
-    C program to calculate AVERAGE gain/loss
+    C program to calculate AVERAGE gain per day
 */
-  int main()
-  {
-   int n, sum = 0, me, arrayGain[30];
- 
-   scanf("%d", &n);
- 
-   for (me = 0; me < n; me++)
+   int i, n = 30, sumGain = 0, sumLoss = 0;
+   float meanGain, meanLoss;
+  
+   for (i = 0; i < n; i++)
    {
-      scanf("%d", &array[me]);
-      sum = sum + array[me];
+      sumGain += arrayGain[i];
    }
+   meanGain = sumGain / (float)n;
+   printf("Average money earned per day: %.4f\n", meanGain);
 
-   mean = sum / (float)n;
-   printf("Average Money Gained: %.4f", mean);
-
-   return 0;
-  }
- int main()
-  {
-   int n, sum = 0, ms, arraySpent[30];
- 
-   scanf("%d", &n);
- 
-   for (ms = 0; ms < n; ms++)
+/*
+    C program to calculate AVERAGE loss per day
+*/
+   for (i = 0; i < n; i++)
    {
-      scanf("%d", &array[ms]);
-      sum = sum + array[ms];
+     sumLoss += arraySpent[i];
    }
+   meanLoss = sumLoss / (float)n;
+   printf("Average money spent per day: %.4f\n", meanLoss);
 
-   mean = sum / (float)n;
-   printf("Average Money Spent: %.4f", mean);
-
-   return 0;
-  }
+/*
+    C program to calculate NET gain/loss
+*/
+int nme = 0, nml = 0, net = 0;
+for (i = 0; i < n; i++)
+{
+  nme += arrayGain[i];
+  nml += arraySpent[i];
+}
+if (nme > nml){
+net = nme - nml;
+printf("Your net profit is %d\n", net);
+}
+else {
+net = nml - nme;
+printf("Your net loss is %d\n", net);
+} 
 
 	/* C program to calculate highest money spent in one day and highest money earned in one day*/
   int highestGain = arrayGain[0];
@@ -120,7 +98,7 @@ main (int argc, char* argv[])
       dayGain = n+1;
   }
   }
-  printf("The highest amount of money gained in one day is %d, on day %d\n", highestGain, dayGain);
+  printf("The highest amount of money earned in one day is %d, on day %d\n", highestGain, dayGain);
   
   for (int x = 1; x < 30; x++)
   {
