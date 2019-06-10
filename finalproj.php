@@ -91,10 +91,10 @@
       Money spent on day 2: <input type="text" name="arg4"><br>
       Money earned on day 3: <input type="text" name="arg5"><br>
       Money spent on day 3: <input type="text" name="arg6"><br>
-      Arg7: <input type="text" name="arg7"><br>
-      Arg8: <input type="text" name="arg8"><br>
-      Arg9: <input type="text" name="arg9"><br>
-      Arg10: <input type="text" name="arg10"><br>
+      Money earned on day 4: <input type="text" name="arg7"><br>
+      Money spent on day 4: <input type="text" name="arg8"><br>
+      Money earned on day 5: <input type="text" name="arg9"><br>
+      Money spent on day 5: <input type="text" name="arg10"><br>
       Arg11: <input type="text" name="arg11"><br>
       Arg12: <input type="text" name="arg12"><br>
       Arg13: <input type="text" name="arg13"><br>
