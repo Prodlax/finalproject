@@ -112,7 +112,7 @@
       Money earned on day 13: <input type="text" name="arg25"><br>
       Money spent on day 13: <input type="text" name="arg26"><br>
       Money earned on day 14: <input type="text" name="arg27"><br>
-      Money spent on day : <input type="text" name="arg28"><br>
+      Money spent on day 14: <input type="text" name="arg28"><br>
       Arg29: <input type="text" name="arg29"><br>
       Arg30: <input type="text" name="arg30"><br>
       Arg31: <input type="text" name="arg31"><br>
