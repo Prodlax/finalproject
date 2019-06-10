@@ -9,7 +9,7 @@ default: $(TARGET)
 all: default
 
 HEADERS = $ project.h
-OBJECTS = $ project.c projfunction.c
+OBJECTS = $ project.o projfunction.o
 
 %.o: %.c $(HEADERS)
 	$(CC) $(CFLAGS) -c $< -o $@
