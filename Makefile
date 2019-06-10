@@ -8,7 +8,7 @@ CFLAGS = -g -Wall -I.
 default: $(TARGET)
 all: default
 
-HEADERS = $(wildcard *.h)
+HEADERS = $ project.h
 OBJECTS = $ project.c projfunction.c
 
 %.o: %.c $(HEADERS)
