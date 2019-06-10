@@ -87,6 +87,64 @@
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
       Arg1: <input type="text" name="arg1"><br>
       Arg2: <input type="text" name="arg2"><br>
+      Arg3: <input type="text" name="arg3"><br>
+      Arg4: <input type="text" name="arg4"><br>
+      Arg5: <input type="text" name="arg5"><br>
+      Arg6: <input type="text" name="arg6"><br>
+      Arg7: <input type="text" name="arg7"><br>
+      Arg8: <input type="text" name="arg8"><br>
+      Arg9: <input type="text" name="arg9"><br>
+      Arg10: <input type="text" name="arg10"><br>
+      Arg11: <input type="text" name="arg11"><br>
+      Arg12: <input type="text" name="arg12"><br>
+      Arg13: <input type="text" name="arg13"><br>
+      Arg14: <input type="text" name="arg14"><br>
+      Arg15: <input type="text" name="arg15"><br>
+      Arg16: <input type="text" name="arg16"><br>
+      Arg17: <input type="text" name="arg17"><br>
+      Arg18: <input type="text" name="arg18"><br>
+      Arg19: <input type="text" name="arg19"><br>
+      Arg20: <input type="text" name="arg20"><br>
+      Arg21: <input type="text" name="arg21"><br>
+      Arg22: <input type="text" name="arg22"><br>
+      Arg23: <input type="text" name="arg23"><br>
+      Arg24: <input type="text" name="arg24"><br>
+      Arg25: <input type="text" name="arg25"><br>
+      Arg26: <input type="text" name="arg26"><br>
+      Arg27: <input type="text" name="arg27"><br>
+      Arg28: <input type="text" name="arg28"><br>
+      Arg29: <input type="text" name="arg29"><br>
+      Arg30: <input type="text" name="arg30"><br>
+      Arg31: <input type="text" name="arg31"><br>
+      Arg32: <input type="text" name="arg32"><br>
+      Arg33: <input type="text" name="arg33"><br>
+      Arg34: <input type="text" name="arg34"><br>
+      Arg35: <input type="text" name="arg35"><br>
+      Arg36: <input type="text" name="arg36"><br>
+      Arg37: <input type="text" name="arg37"><br>
+      Arg38: <input type="text" name="arg38"><br>
+      Arg39: <input type="text" name="arg39"><br>
+      Arg40: <input type="text" name="arg40"><br>
+      Arg41: <input type="text" name="arg41"><br>
+      Arg42: <input type="text" name="arg42"><br>
+      Arg43: <input type="text" name="arg43"><br>
+      Arg44: <input type="text" name="arg44"><br>
+      Arg45: <input type="text" name="arg45"><br>
+      Arg46: <input type="text" name="arg46"><br>
+      Arg47: <input type="text" name="arg47"><br>
+      Arg48: <input type="text" name="arg48"><br>
+      Arg49: <input type="text" name="arg49"><br>
+      Arg50: <input type="text" name="arg50"><br>
+      Arg51: <input type="text" name="arg51"><br>
+      Arg52: <input type="text" name="arg52"><br>
+      Arg53: <input type="text" name="arg53"><br>
+      Arg54: <input type="text" name="arg54"><br>
+      Arg55: <input type="text" name="arg55"><br>
+      Arg56: <input type="text" name="arg56"><br>
+      Arg57: <input type="text" name="arg57"><br>
+      Arg58: <input type="text" name="arg58"><br>
+      Arg59: <input type="text" name="arg59"><br>
+      Arg60: <input type="text" name="arg60"><br>
       <br>
       <input type="submit" value="Go!">
     </form>
