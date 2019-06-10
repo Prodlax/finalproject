@@ -8,10 +8,7 @@ main (int argc, char* argv[])
 	   printf(argv[i]);
   }
   return 0;
-	
-}
- {exit(0);
-  
+
   
   /* C program to initialize arrayGain and arrayLoss */
   int arrayGain[30];
