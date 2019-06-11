@@ -10,16 +10,12 @@ main (int argc, char* argv[])
   int c = 0;
   for (int i = 0; i < argc; i+=2)
     {
-      printf ("Input money earned on day %d: \n", c);
-      // scanf ("%d", &arrayGain[i]);
       arrayGain[c++] = atoi(argv[i]);
     }
   int arraySpent[30];
   c = 0;
   for (int i = 1; i < argc; i+=2)
     {
-      printf ("Input money spent on day %d: \n", c);
-      // scanf ("%d", &arraySpent[i]);
       arraySpent[c++] = atoi(argv[i]);
     }
 /**
