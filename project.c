@@ -88,27 +88,23 @@ printf("Your net loss is %d\n", net);
 
 	/* C program to calculate highest money spent in one day and highest money earned in one day*/
   int highestGain = arrayGain[0];
-  int dayGain = 0;
   int highestSpent = arraySpent[0];
-  int dayLoss = 0;
   
   for (int n = 1; n < 30; n++)
   {
    if (arrayGain[n] > highestGain)
   {
       highestGain = arrayGain[n];
-      dayGain = n;
   }
   }
-  printf("The highest amount of money earned in one day is %d, on day %d\n", highestGain, dayGain);
+  printf("The highest amount of money earned in one day is %d\n", highestGain);
   
   for (int x = 1; x < 30; x++)
   {
       if (arraySpent[x] > highestSpent)
       {
           highestSpent = arraySpent[x];
-          dayLoss = x;
       }
   }
-  printf ("The highest amount of money spent in one day is %d, on day %d\n", highestSpent, dayLoss);
+  printf ("The highest amount of money spent in one day is %d\n", highestSpent);
 }
