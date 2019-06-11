@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Form Input 2</title>
+    <title>Money calculator</title>
   </head>
 
 
   <body>
 
-    <h1>Form Input - Demo 2</h1>
-    <p>Demo of how to take form input and pass it to a program - all in a single page</p>
+    <h1>Input how much money you spent and earned in the past 30 days, and this program will run statistics on it</h1>
+    <p>The program should display net profit/loss, average money earned per day, average money spent each day, profit/loss each day, highest money spent in one day, and the highest money earned in one day</p>
 
     <?php
        // define variables and set to empty values
@@ -85,66 +85,66 @@
     ?>
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-      Money earned on day 1: <input type="text" name="arg1"><br>
-      Money spent on day 1: <input type="text" name="arg2"><br>
-      Money earned on day 2: <input type="text" name="arg3"><br>
-      Money spent on day 2: <input type="text" name="arg4"><br>
-      Money earned on day 3: <input type="text" name="arg5"><br>
-      Money spent on day 3: <input type="text" name="arg6"><br>
-      Money earned on day 4: <input type="text" name="arg7"><br>
-      Money spent on day 4: <input type="text" name="arg8"><br>
-      Money earned on day 5: <input type="text" name="arg9"><br>
-      Money spent on day 5: <input type="text" name="arg10"><br>
-      Money earned on day 6: <input type="text" name="arg11"><br>
-      Money spent on day 6: <input type="text" name="arg12"><br>
-      Money earned on day 7: <input type="text" name="arg13"><br>
-      Money spent on day 7: <input type="text" name="arg14"><br>
-      Money earned on day 8: <input type="text" name="arg15"><br>
-      Money spent on day 8: <input type="text" name="arg16"><br>
-      Money earned on day 9: <input type="text" name="arg17"><br>
-      Money spent on day 9: <input type="text" name="arg18"><br>
-      Money earned on day 10: <input type="text" name="arg19"><br>
-      Money spent on day 10: <input type="text" name="arg20"><br>
-      Money earned on day 11: <input type="text" name="arg21"><br>
-      Money spent on day 11: <input type="text" name="arg22"><br>
-      Money earned on day 12: <input type="text" name="arg23"><br>
-      Money spent on day 12: <input type="text" name="arg24"><br>
-      Money earned on day 13: <input type="text" name="arg25"><br>
-      Money spent on day 13: <input type="text" name="arg26"><br>
-      Money earned on day 14: <input type="text" name="arg27"><br>
-      Money spent on day 14: <input type="text" name="arg28"><br>
-      Money earned on day 15: <input type="text" name="arg29"><br>
-      Money spent on day 15: <input type="text" name="arg30"><br>
-      Money earned on day 16: <input type="text" name="arg31"><br>
-      Money spent on day 16: <input type="text" name="arg32"><br>
-      Money earned on day 17: <input type="text" name="arg33"><br>
-      Money spent on day 17: <input type="text" name="arg34"><br>
-      Money earned on day 18: <input type="text" name="arg35"><br>
-      Money spent on day 18: <input type="text" name="arg36"><br>
-      Money earned on day 19: <input type="text" name="arg37"><br>
-      Money spent on day 19: <input type="text" name="arg38"><br>
-      Money earned on day 20: <input type="text" name="arg39"><br>
-      Money spent on day 20: <input type="text" name="arg40"><br>
-      Money earned on day 21: <input type="text" name="arg41"><br>
-      Money spent on day 21: <input type="text" name="arg42"><br>
-      Money earned on day 22: <input type="text" name="arg43"><br>
-      Money spent on day 22: <input type="text" name="arg44"><br>
-      Money earned on day 23: <input type="text" name="arg45"><br>
-      Money spent on day 23: <input type="text" name="arg46"><br>
-      Money earned on day 24: <input type="text" name="arg47"><br>
-      Money spent on day 24: <input type="text" name="arg48"><br>
-      Money earned on day 25: <input type="text" name="arg49"><br>
-      Money spent on day 25: <input type="text" name="arg50"><br>
-      Money earned on day 26: <input type="text" name="arg51"><br>
-      Money spent on day 26: <input type="text" name="arg52"><br>
-      Money earned on day 27: <input type="text" name="arg53"><br>
-      Money spent on day 27: <input type="text" name="arg54"><br>
-      Money earned on day 28: <input type="text" name="arg55"><br>
-      Money spenton day 28: <input type="text" name="arg56"><br>
-      Money earned on day 29: <input type="text" name="arg57"><br>
-      Money spent on day 29: <input type="text" name="arg58"><br>
-      Money earned on day 30: <input type="text" name="arg59"><br>
-      Money spent on day 30: <input type="text" name="arg60"><br>
+      Money spent on day 1: <input type="text" name="arg1"><br>
+      Money earned on day 1: <input type="text" name="arg2"><br>
+      Money spent on day 2: <input type="text" name="arg3"><br>
+      Money earned on day 2: <input type="text" name="arg4"><br>
+      Money spent on day 3: <input type="text" name="arg5"><br>
+      Money earned on day 3: <input type="text" name="arg6"><br>
+      Money spent on day 4: <input type="text" name="arg7"><br>
+      Money earned on day 4: <input type="text" name="arg8"><br>
+      Money spent on day 5: <input type="text" name="arg9"><br>
+      Money earned on day 5: <input type="text" name="arg10"><br>
+      Money spent on day 6: <input type="text" name="arg11"><br>
+      Money earned on day 6: <input type="text" name="arg12"><br>
+      Money spent on day 7: <input type="text" name="arg13"><br>
+      Money earned on day 7: <input type="text" name="arg14"><br>
+      Money spent on day 8: <input type="text" name="arg15"><br>
+      Money earned on day 8: <input type="text" name="arg16"><br>
+      Money spent on day 9: <input type="text" name="arg17"><br>
+      Money earned on day 9: <input type="text" name="arg18"><br>
+      Money spent on day 10: <input type="text" name="arg19"><br>
+      Money earned on day 10: <input type="text" name="arg20"><br>
+      Money spent on day 11: <input type="text" name="arg21"><br>
+      Money earned on day 11: <input type="text" name="arg22"><br>
+      Money spent on day 12: <input type="text" name="arg23"><br>
+      Money earned on day 12: <input type="text" name="arg24"><br>
+      Money spent on day 13: <input type="text" name="arg25"><br>
+      Money earned on day 13: <input type="text" name="arg26"><br>
+      Money spent on day 14: <input type="text" name="arg27"><br>
+      Money earned on day 14: <input type="text" name="arg28"><br>
+      Money spent on day 15: <input type="text" name="arg29"><br>
+      Money earned on day 15: <input type="text" name="arg30"><br>
+      Money spent on day 16: <input type="text" name="arg31"><br>
+      Money earned on day 16: <input type="text" name="arg32"><br>
+      Money spent on day 17: <input type="text" name="arg33"><br>
+      Money earned on day 17: <input type="text" name="arg34"><br>
+      Money spent on day 18: <input type="text" name="arg35"><br>
+      Money earned on day 18: <input type="text" name="arg36"><br>
+      Money spent on day 19: <input type="text" name="arg37"><br>
+      Money earned on day 19: <input type="text" name="arg38"><br>
+      Money spent on day 20: <input type="text" name="arg39"><br>
+      Money earned on day 20: <input type="text" name="arg40"><br>
+      Money spent on day 21: <input type="text" name="arg41"><br>
+      Money earned on day 21: <input type="text" name="arg42"><br>
+      Money spent on day 22: <input type="text" name="arg43"><br>
+      Money earned on day 22: <input type="text" name="arg44"><br>
+      Money spent on day 23: <input type="text" name="arg45"><br>
+      Money earned on day 23: <input type="text" name="arg46"><br>
+      Money spent on day 24: <input type="text" name="arg47"><br>
+      Money earned on day 24: <input type="text" name="arg48"><br>
+      Money spent on day 25: <input type="text" name="arg49"><br>
+      Money earned on day 25: <input type="text" name="arg50"><br>
+      Money spent on day 26: <input type="text" name="arg51"><br>
+      Money earned on day 26: <input type="text" name="arg52"><br>
+      Money spent on day 27: <input type="text" name="arg53"><br>
+      Money earned on day 27: <input type="text" name="arg54"><br>
+      Money spent on day 28: <input type="text" name="arg55"><br>
+      Money earned on day 28: <input type="text" name="arg56"><br>
+      Money spent on day 29: <input type="text" name="arg57"><br>
+      Money earned on day 29: <input type="text" name="arg58"><br>
+      Money spent on day 30: <input type="text" name="arg59"><br>
+      Money earned on day 30: <input type="text" name="arg60"><br>
       <br>
       <input type="submit" value="Go!">
     </form>
