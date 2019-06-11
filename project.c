@@ -97,7 +97,7 @@ printf("Your net loss is %d\n", net);
    if (arrayGain[n] > highestGain)
   {
       highestGain = arrayGain[n];
-      dayGain = n+1;
+      dayGain = n;
   }
   }
   printf("The highest amount of money earned in one day is %d, on day %d\n", highestGain, dayGain);
@@ -107,7 +107,7 @@ printf("Your net loss is %d\n", net);
       if (arraySpent[x] > highestSpent)
       {
           highestSpent = arraySpent[x];
-          dayLoss = x+1;
+          dayLoss = x;
       }
   }
   printf ("The highest amount of money spent in one day is %d, on day %d\n", highestSpent, dayLoss);
